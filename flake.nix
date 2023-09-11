@@ -24,8 +24,8 @@
             	    '';
         };
       in {
-        defaultPackage = hubspot-cli;
-        defaultApp = {
+        packages.default = hubspot-cli;
+        app.default = {
           type = "app";
           program = "${hubspot-cli}/bin/hs";
         };
