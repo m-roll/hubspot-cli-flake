@@ -24,6 +24,7 @@
             	    '';
         };
       in {
+        overlays.default = final: prev: { inherit hubspot-cli; };
         packages.default = hubspot-cli;
         app.default = {
           type = "app";
