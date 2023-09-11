@@ -33,7 +33,7 @@
         });
     in outputs // {
       overlays.default = final: prev: {
-        hubspot-cli = outputs.${prev.system}.packages.hubspot-cli;
+        hubspot-cli = outputs.packages.${prev.system}.hubspot-cli;
       };
     };
 }
